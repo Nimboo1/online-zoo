@@ -31,6 +31,15 @@
     width:100%;
     min-width:1600px;
 
+    background: -o-linear-gradient(134.25deg, rgba(254, 210, 144, 0.7) 30.06%,
+    #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), 
+    -o-linear-gradient(134.25deg, rgba(254, 189, 171, 0.74) 30.06%,
+    rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%,
+    #EAF7FE 127.9%, #EAF7FE 149.54%),
+    -o-linear-gradient(134.25deg, rgba(254, 189, 171, 0.74) 30.06%,
+    rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%,
+    #EAF7FE 127.9%, #EAF7FE 149.54%);
+
     background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%,
     #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), 
     linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%,
@@ -79,10 +88,16 @@
     padding:40px 92px 62px 92px;
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.52);
-    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
     text-align: center;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 /*DONATE ENDS*/
@@ -110,14 +125,21 @@
 
 .visual__container {
     margin-bottom:87px;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
 }
 
 .number__container {
     margin-top:105px;
     margin-left:215px;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 
     position: relative;
 }
@@ -158,8 +180,12 @@
     background: #404950;
     border-radius: 2px;
     height:27px;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding:8px 15px;
     position: relative;
     z-index: 1;
@@ -176,24 +202,40 @@
     z-index: 2;
     top:50%;
     left:50%;
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
 }
 
 .radio__item {
     position:relative;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .radio {
-    transform: translate(-0.6px, 8.8px);
+    -webkit-transform: translate(-0.6px, 8.8px);
+        -ms-transform: translate(-0.6px, 8.8px);
+            transform: translate(-0.6px, 8.8px);
 
-    appearance: none;
+    -webkit-appearance: none;
+
+       -moz-appearance: none;
+
+            appearance: none;
     width:10px;
     height: 10px;
     background: #FFEE2E;
     border-radius: 50%;
+    -webkit-transition:all 0.2s ease;
+    -o-transition:all 0.2s ease;
     transition:all 0.2s ease;
 
     cursor:pointer;
@@ -212,7 +254,11 @@
     position:absolute;
     top:50%;
     left:50%;
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    -webkit-transition:all 0.2s ease;
+    -o-transition:all 0.2s ease;
     transition:all 0.2s ease;
 }
 
@@ -231,6 +277,10 @@
     position: relative;
     z-index: 10;
 
+    -webkit-transition:all 0.2s ease;
+
+    -o-transition:all 0.2s ease;
+
     transition:all 0.2s ease;
 }
 
@@ -246,6 +296,8 @@
     position:absolute;
     bottom: -56px;
     left: 0px;
+    -webkit-transition:all 0.2s ease;
+    -o-transition:all 0.2s ease;
     transition:all 0.2s ease;
 }
 
@@ -260,6 +312,8 @@
     position:absolute;
     left:-12px;
     top:8px;
+    -webkit-transition:all 0.2s ease;
+    -o-transition:all 0.2s ease;
     transition:all 0.2s ease;
 }
 
@@ -299,6 +353,18 @@
     border-color:#4B9200;
 }
 
+.donate__input:not(:-moz-placeholder-shown):valid {
+    outline:none;
+    color:#4B9200;
+    border-color:#4B9200;
+}
+
+.donate__input:not(:-ms-input-placeholder):valid {
+    outline:none;
+    color:#4B9200;
+    border-color:#4B9200;
+}
+
 .donate__input:not(:placeholder-shown):valid {
     outline:none;
     color:#4B9200;
@@ -312,7 +378,8 @@
 
 .donate__input::-webkit-outer-spin-button,
 .donate__input::-webkit-inner-spin-button {
-    appearance: none;
+    -webkit-appearance: none;
+            appearance: none;
 }
 
 .donate__input-icon {
@@ -324,10 +391,20 @@
     position:absolute;
     right:10px;
     top:17px;
+    -webkit-transition:all 0.2s ease;
+    -o-transition:all 0.2s ease;
     transition:all 0.2s ease;
 }
 
 .donate__input:focus + .donate__input-icon {
+    background: url("../../assets/icons/dollarGreen.svg");
+}
+
+.donate__input:not(:-moz-placeholder-shown):valid + .donate__input-icon {
+    background: url("../../assets/icons/dollarGreen.svg");
+}
+
+.donate__input:not(:-ms-input-placeholder):valid + .donate__input-icon {
     background: url("../../assets/icons/dollarGreen.svg");
 }
 
@@ -340,13 +417,19 @@
 }
 
 .radio__container-count {
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-bottom:29px;
 }
 
 .label__container {
     width:240px;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
 }
 
@@ -360,9 +443,15 @@
     height:16px;
     border: 1px solid #FE9013;
     border-radius: 50%;
-    transform: translateY(2px);
-    appearance: none;
+    -webkit-transform: translateY(2px);
+        -ms-transform: translateY(2px);
+            transform: translateY(2px);
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     position:relative;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
 
