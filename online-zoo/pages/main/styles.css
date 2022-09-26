@@ -305,6 +305,10 @@ h1,h2,h3,h4,h5,h6,p {
     background: #E47209;
 }
 
+.slider__button:active {
+    background: #4B9200;
+}
+
 .slider__button-left {
     left: -82px;
 }
@@ -334,7 +338,7 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .slider__item:hover .item__info {
-    transform: translateY(73.5px);
+    transform: translateY(73px);
 }
 
 .item__img {
@@ -589,6 +593,11 @@ h1,h2,h3,h4,h5,h6,p {
     height:6px;
     background: rgba(254, 144, 19, 1);
     border-radius:5px;
+    cursor:pointer;
+}
+
+.testimonials__progress-slide:hover {
+    background: #E47209;
 }
 
 .testimonials__side-img {
@@ -793,15 +802,15 @@ h1,h2,h3,h4,h5,h6,p {
     font-size:16px;
 }
 
-.form__input:invalid {
-    border: 1px solid #D31414;
-    color: #D31414;
-}
-
 .form__input:focus {
     outline:none;
     color:#BDBDBD;
     border-color:#4B9200;
+}
+
+.form__input:invalid {
+    border: 1px solid #D31414;
+    color: #D31414;
 }
 
 .form__input:not(:placeholder-shown):valid {
@@ -821,19 +830,25 @@ h1,h2,h3,h4,h5,h6,p {
     cursor:pointer;
 }
 
-.form__submit:active {
-    border-color:#4B9200;
-    color: #4B9200;
+.form__input:not(:placeholder-shown):valid + .form__submit {
+    border-color: #333B41;
+    color:black;
 }
 
-.form__input:not(:placeholder-shown):valid + .form__submit {
-    border: 1px solid #333B41;
-    color:black;
+.form__input:not(:placeholder-shown):valid + .form__submit:active {
+    border-color:#4B9200;
+    color: #4B9200;
 }
 
 .footer__autor{
     width:230px;
     margin-left:auto;
+    display:block;
+}
+
+.footer__autor:active p{
+    color:rgba(75, 146, 0, 1);
+    text-decoration: underline;
 }
 
 .autor__text {
