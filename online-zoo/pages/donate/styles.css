@@ -359,7 +359,7 @@ h1,h2,h3,h4,h5,h6,p {
 .intro {
     width:100%;
     min-width:1600px;
-    height:390px;
+    height:385px;
 
     background-image: url("../../assets/images/panda_bg.png");
     background-repeat: no-repeat;
@@ -392,7 +392,351 @@ h1,h2,h3,h4,h5,h6,p {
     padding-bottom:180px;
 }
 
+.donate__advertisement {
+    margin-bottom:10px;
+    font-size:36px;
+    font-weight: 400;
+    line-height: 46.8px;
+    color:white;
+    text-transform: uppercase;
+}
+
+.donate__subtext {
+    margin-bottom:40px;
+
+    line-height: 22.4px;
+    color:white;
+    text-align: left;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+.donate__info {
+    margin-bottom:60px;
+    font-size: 36px;
+    line-height: 54px;
+    color: #FE9013;
+    font-weight: 400;
+}
+
+.donate__container {
+    padding:40px 92px 62px 92px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.52);
+    backdrop-filter: blur(2px);
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+}
+
 /*DONATE ENDS*/
+
+
+
+/*Donate form*/
+
+.donate__container-title {
+    margin-bottom:20px;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 57.6px;
+    color: #FE9013;
+}
+
+.donate__container-text {
+    margin-bottom:60px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28.8px;
+    text-align: left;
+    color: #333B41;
+}
+
+.visual__container {
+    margin-bottom:87px;
+    display:flex;
+}
+
+.number__container {
+    margin-top:105px;
+    margin-left:215px;
+    display:flex;
+    flex-direction: column;
+
+    position: relative;
+}
+
+.number__container::after {
+    display:block;
+    content:"";
+    width:14px;
+    height: 14px;
+    background: url("../../assets/icons/x_icon.svg");
+    background-position: center;
+    background-size: cover;
+
+    position:absolute;
+    right: -25px;
+    top: 24px;
+}
+
+.number {
+    margin-bottom:11px;
+    font-weight: 500;
+    font-size:72px;
+    line-height: 57.6px;
+    text-align:center;
+}
+
+.number__text {
+    font-weight: 400;
+    text-align:center;
+    line-height: 22.4px;
+}
+
+.animal {
+    margin-left:89px;
+}
+
+.radio__container {
+    background: #404950;
+    border-radius: 2px;
+    height:27px;
+    display:flex;
+    justify-content: space-between;
+    padding:8px 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.radio__container::after {
+    content:"";
+    display:block;
+    height:2px;
+    width:915px;
+    background-color: #72828E;
+
+    position:absolute;
+    z-index: 2;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.radio__item {
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.radio {
+    transform: translate(-0.6px, 8.8px);
+
+    appearance: none;
+    width:10px;
+    height: 10px;
+    background: #FFEE2E;
+    border-radius: 50%;
+    transition:all 0.2s ease;
+
+    cursor:pointer;
+    position:relative;
+    z-index: 3;
+}
+
+.radio::after {
+    content: "";
+    display:block;
+    width:23px;
+    height:23px;
+    border:1px solid  transparent;
+    border-radius: 50%;
+
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    transition:all 0.2s ease;
+}
+
+.radio:checked::after {
+    border:1px solid  #FE9013;
+}
+
+.radio__label {
+    display:block;
+    width:40px;
+    height: 40px;
+    border:1px solid  transparent;
+    border-radius: 50%;
+    padding-right:0.5px;
+    cursor:pointer;
+
+    transition:all 0.2s ease;
+}
+
+.radio__label:has(.radio:checked) {
+    border:1px solid  #FE9013;
+}
+
+.radio__value {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 36.4px;
+    color: #333B41;
+    position:absolute;
+    bottom: -56px;
+    left: 0px;
+    transition:all 0.2s ease;
+}
+
+.radio__value::before {
+    content: "";
+    display:block;
+    width:10px;
+    height:20px;
+    background: url("../../assets/icons/dollarBlack.svg");
+    background-position: center;
+    background-size: cover;
+    position:absolute;
+    left:-12px;
+    top:8px;
+    transition:all 0.2s ease;
+}
+
+.radio:checked + .radio__value {
+    color:#FE9013;
+}
+
+.radio:checked + .radio__value::before {
+    background: url("../../assets/icons/dollarOrange.svg");
+}
+
+
+
+.donate__input-block {
+    margin-top:98px;
+    margin-bottom:25px;
+    position: relative;
+    display:inline-block;
+}
+
+.donate__input {
+    display:inline-block;
+    width:268px;
+    height:54px;
+    padding:16px 143px 16px 9px;
+    border: 1px solid #929699;
+    border-radius: 2px;
+    font-family: 'Roboto', sans-serif;
+    font-size:16px;
+    color: #929699;
+    background-color: transparent;
+}
+
+.donate__input:focus {
+    outline:none;
+    color:#4B9200;
+    border-color:#4B9200;
+}
+
+.donate__input:not(:placeholder-shown):valid {
+    outline:none;
+    color:#4B9200;
+    border-color:#4B9200;
+}
+
+.donate__input:invalid {
+    border: 1px solid #D31414;
+    color: #D31414;
+}
+
+.donate__input::-webkit-outer-spin-button,
+.donate__input::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+.donate__input-icon {
+    width:10px;
+    height:20px;
+    background: url("../../assets/icons/dollarGrey.svg");
+    background-position: center;
+    background-size: cover;
+    position:absolute;
+    right:10px;
+    top:17px;
+    transition:all 0.2s ease;
+}
+
+.donate__input:focus + .donate__input-icon {
+    background: url("../../assets/icons/dollarGreen.svg");
+}
+
+.donate__input:not(:placeholder-shown):valid + .donate__input-icon {
+    background: url("../../assets/icons/dollarGreen.svg");
+}
+
+.donate__input:invalid + .donate__input-icon {
+    background: url("../../assets/icons/dollarRed.svg");
+}
+
+.radio__container-count {
+    display:flex;
+    justify-content: center;
+    margin-bottom:29px;
+}
+
+.label__container {
+    width:240px;
+    display:flex;
+}
+
+.radio__label-count {
+    margin-left:10px;
+}
+
+.radio-count {
+    margin:0;
+    width:16px;
+    height:16px;
+    border: 1px solid #FE9013;
+    border-radius: 50%;
+    transform: translateY(2px);
+    appearance: none;
+    position:relative;
+    transition: all 0.2s ease;
+}
+
+.radio-count:checked {
+    background: #4B9200;
+    border: 1px solid #4B9200;
+}
+
+.margin-radio {
+    margin-left:50px;
+}
+
+.radio__value-count {
+    margin-left:9px;
+    color: #333B41;
+    line-height: 22.4px;
+    display:inline-block;
+
+}
+
+.form__subtitle {
+    margin-top:30px;
+    text-align: center;
+    line-height: 22.4px;
+    color: #333B41;
+}
+
+/*DONATE FORM ENDS*/
+
+
 
 
 

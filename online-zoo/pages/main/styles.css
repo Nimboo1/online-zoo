@@ -247,7 +247,7 @@ h1,h2,h3,h4,h5,h6,p {
 
 .about__subtitle {
     margin-top:54px;
-    margin-bottom:37px;
+    margin-bottom:34px;
     color: #333B41;
     font-weight: 400;
     font-size:24px;
@@ -257,12 +257,12 @@ h1,h2,h3,h4,h5,h6,p {
 .about__paragraph {
     color: #333B41;
     font-weight: 400;
-    line-height: 20.8px;
+    line-height: 22px;
 }
 
 .about__side-image {
     position: absolute;
-    top:-114px;
+    top:-128px;
     right:0;
 }
 
@@ -383,13 +383,14 @@ h1,h2,h3,h4,h5,h6,p {
 .item__title {
     font-weight: 500;
     line-height: 22.4px;
+    font-size:16px;
     text-transform: uppercase;
 }
 
 
 .item__info {
     font-weight: 300;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 18px;
 }
 
@@ -483,7 +484,7 @@ h1,h2,h3,h4,h5,h6,p {
 /*CARDS START*/
 
 .cards__title {
-    margin-top:50px;
+    margin-top:60px;
     margin-bottom:40px;
     font-size: 36px;
     font-weight: 400;
@@ -533,6 +534,7 @@ h1,h2,h3,h4,h5,h6,p {
     margin-top:30px;
     line-height: 22.4px;
     color: #333B41;
+    text-align:left;
 }
 /*CARDS END*/
 
