@@ -21,7 +21,7 @@ h1,h2,h3,h4,h5,h6,p {
 /*GENERAL STARTS*/
 
 .container {
-    width:1160px;
+    max-width:1160px;
     margin:0 auto;
 }
 
@@ -431,3 +431,69 @@ h1,h2,h3,h4,h5,h6,p {
     margin-bottom:10px;
 }
 /*FOOTER ENDS*/
+
+
+
+/*Media Queries*/
+@media screen and (max-width: 1599px) {
+
+    /*Header*/
+    .container {
+        max-width:940px;
+    }
+
+    .header {
+        min-width:1000px;
+        z-index: 2;
+    }
+
+    .nav__link {
+        margin-right:48px; 
+    }
+
+    .nav__link:nth-child(5) {
+        margin-right:259px;
+    }
+
+    /*FOOTER*/
+
+.footer {
+    min-width:1000px;
+    padding-top:41px;
+}
+
+.footer__wrapper {
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+}
+
+/*Footer section 1*/
+
+.margin {
+    margin-bottom:68px;
+}
+
+/*Footer section 2*/
+
+.footer__section:nth-child(2) {
+    width:auto;
+    align-self:flex-end;
+    margin-left:0;
+    margin-right:0;
+}
+
+.footer__nav {
+    gap:48px;
+}
+
+.footer__nav .nav__link {
+    margin:0;
+}
+
+/*Footer section 3*/
+
+.footer__section:last-child {
+    margin-left:-78px;
+}
+}

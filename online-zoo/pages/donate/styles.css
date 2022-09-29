@@ -481,6 +481,62 @@
 
 /*DONATE FORM ENDS*/
 
+@media screen and (max-width: 1599px) {
+
+    /*INTRO*/
+.intro {
+    min-width:1000px;
+    height:390px;
+    margin-top:80px;
+
+    background-position: 28% 50%;
+}
+
+
+/*DONATE*/
+.donate {
+    min-width:1000px;
+}
+
+.donate__wrapper {
+    padding-top:40px;
+    padding-bottom:40px;
+}
+
+.donate__advertisement {
+    margin-bottom:30px;
+}
+
+.donate__info {
+    margin-bottom:40px;
+}
+
+.donate__container {
+    padding:20px 44px 46px 47px;
+}
+
+/*Donate form*/
+.donate__container-title {
+    margin-bottom:10px;
+}
+
+.number__container {
+    margin-left:149px;
+}
+
+.radio__container {
+    gap:90px;
+}
+
+.radio__item:first-child {
+    display:none;
+}
+
+.radio__container::after {
+    width:785px;
+}
+}
+
 
 
 
