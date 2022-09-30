@@ -140,8 +140,8 @@ h1,h2,h3,h4,h5,h6,p {
     white-space: nowrap;
 }
 
-.nav__link:nth-child(5) {
-    margin-right:438px;
+.nav__link:nth-child(6) {
+    margin-left:auto;
 }
 
 .nav__link:last-child {
@@ -169,6 +169,20 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 /*NAVIGATION ENDS*/
+
+/*MENU STARTS*/
+
+.menu {
+    display:none;
+    margin-left:auto;
+    
+}
+
+.menu__img {
+    margin-bottom:2px;
+}
+
+/*MENU ENDS*/
 
 /*FOOTER STARTS*/
 
@@ -495,5 +509,114 @@ h1,h2,h3,h4,h5,h6,p {
 
 .footer__section:last-child {
     margin-left:-78px;
+}
+}
+
+
+/*MEDIA -999*/
+@media screen and (max-width: 999px) {
+
+    /*GENERAL*/
+    .container {
+        max-width:600px;
+    }
+
+    /*HEADER*/
+.header {
+    max-width:640px;
+    position:fixed;
+    z-index: 5000;
+    top:0;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.header__wrapper {
+    height: 34px;
+}
+
+.header .header__logo-title {
+    display:inline-block;
+    width:47px;
+    height:29px;
+    margin-right:0;
+    padding:0;
+    border:none;
+    font-size: 12px;
+    line-height: 120%;
+}
+
+.header .header__logo-img {
+    position: absolute;
+    width:6.5px;
+    height:15.5px;
+    left: 5px;
+    top: 13px; 
+}
+
+/*NAVIGATION*/
+.header .nav {
+    display:none;
+}  
+
+.menu {
+    display:block;
+}
+
+/*FOOTER STARTS*/
+.footer {
+    min-width:640px;
+    padding-top:12px;
+    padding-bottom:12px;
+}
+
+.footer__wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+    position:relative;
+}
+
+/*Footer section 1*/
+.margin {
+    margin-bottom:32px;
+}
+
+.links__container {
+    margin-top:0;
+    position:absolute;
+    right:0;
+    top:0;
+    gap:20px;
+}
+
+.link__img-block {
+    margin-right:0;
+}
+
+.link__text {
+    display:none;
+}
+
+/*Footer section 2*/
+.footer__section:nth-child(2) {
+    margin-left:0;
+    margin-right:auto;
+    margin-top:97px;
+    margin-bottom:-53.5px;;
+    width:auto;
+}
+
+.footer__nav {
+    gap:36px;
+}
+
+/*Footer section 3*/
+.footer__section:last-child {
+    display:block;
+    margin-left:auto;
+}
+
+.footer__form {
+    display:none;
 }
 }

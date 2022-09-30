@@ -77,6 +77,10 @@
     display:flex;
 }
 
+.about .button {
+    display:none;
+}
+
 .about__img {
 
 }
@@ -806,6 +810,281 @@
     margin-bottom:20px;
     overflow: hidden;
 }
+}
 
+/*MEDIA -999*/
+@media screen and (max-width: 999px) {
+
+    /*INTRO*/
+.intro {
+    min-width:640px;
+    height:373px;
+    padding-top:82px;
+    background-position: center;
+}
+
+.intro__wrapper {
+    width:100%;
+    margin-left:0;
+}
+
+.intro__title {
+    margin-bottom:-10px;
+    margin-left:auto;
+    font-size: 54px;
+    line-height: 75%;
+    display:inline-block;
+    width:255.5px;
+    height:204.5px;
+
+    position:relative;
+    z-index: 1;
+}
+
+.intro__img {
+    width:237.5px;
+    height:237.5px;
+
+    position: absolute;
+    right:50px;
+    top:-39px;
+    left:auto;
+}
+
+.intro .button {
+    align-self: flex-start;
+
+}
+
+/*ABOUT*/
+.about {
+    min-width:640px;
+    overflow:hidden;
+}
+
+.about__wrapper {
+    margin-top:60px;
+    margin-bottom:80px;
+}
+
+
+.about__img img{
+    display:none;
+}
+
+.about__description {
+    margin-left:0;
+    width:495px;
+}
+
+.about__subtitle {
+    margin-top:30px;
+    margin-bottom:20px;
+}
+
+.about__side-image {
+    display:block;
+    position: absolute;
+    top:0;
+    right:-30px;
+}
+
+.about__side-image img {
+    height: 476px;
+}
+
+
+/*PETS*/
+.pets {
+    min-width:640px;
+}
+
+.pets__wrapper {
+    padding-bottom:100px;
+}
+
+.slider__container {
+    margin-bottom:60px;
+}
+
+.slider__button-left {
+    left:215px;
+}
+
+.slider__button-right {
+    right:215px;
+}
+
+.slider__row {
+    gap:30px;
+    overflow: hidden;
+}
+
+.slider__row:first-of-type {
+    margin-bottom:92px;
+}
+
+.slider__item {
+    min-width:285px;
+}
+
+.darkest-block {
+    width:285px;
+    height:285px;
+}
+
+.item__img {
+    width:285px;
+    height:285px;
+    -o-object-fit: contain;
+       object-fit: contain;
+       border-radius:5px 5px 0 0;
+}
+
+.item__info {
+    width:285px;
+    padding:6px 9px 11px 12.5px;
+    position:absolute;
+}
+
+.item__title {
+    font-size: 12.5px;
+}
+
+
+.item__geo {
+    font-weight: 300;
+    font-size: 11.5px;
+    line-height: 120%;
+}
+
+.item__icon {
+    width:26px;
+    height: 29px;
+    position:absolute;
+    bottom: 10px;
+    right:9px;
+}
+
+.pets__side-image-left {
+    left:-250px;
+    bottom:0;
+}
+
+.pets__side-image-right {
+    width:175px;
+    height: 131px;
+}
+
+/*INSTRUCTION*/
+.instruction {
+    min-width:640px;
+    padding:20px 0 20px 0;
+}
+
+.instruction .container {
+    max-width:640px;
+}
+
+.instruction__wrapper {
+    padding-top:10px;
+    padding-bottom:60px;
+}
+
+.instruction__title {
+    margin-bottom:20px;
+    font-size: 42px;
+    line-height: 120%;
+}
+
+.instruction__container {
+    margin-left:20px;
+}
+
+.instruction__subtitle {
+    margin-bottom:20px;
+    font-size: 22px;
+    line-height: 26.4px;
+}
+
+.testimonials__side-img {
+    height: 195px;
+    position: absolute;
+    right:0;
+    bottom:-65px;
+}
+
+/*CARDS*/
+.cards__title {
+    margin-top:30px;
+    margin-bottom:20px;
+}
+
+.cards__wrapper {
+    width:588px;
+    margin:0 auto;
+    margin-bottom:40px;
+    gap:42px;
+}
+
+.card:not(:last-child)::after {
+    content:"";
+    display:block;
+    width:80px;
+    background-image: url("../../assets/icons/arrow-green.svg");
+    background-size: contain;
+    right:-55px;
+    top: -14px;
+    z-index: 2;
+}
+
+/*TESTIMONIALS*/
+.testimonials {
+    min-width:640px;
+}
+
+.testimonials__wrapper {
+    margin-top:60px;
+    padding-bottom:80px;
+}
+
+.testimonials__title {
+    margin-bottom:30px;
+}
+
+.testimonials__progress {
+   display:none;
+}
+
+/*TESTIMONIALS-CARD*/
+.testimonials__card {
+    width:auto;
+    min-height:109px;
+    padding:11px 29px 12px 12px;
+    margin-right: 0;
+}
+
+.testimonials__container {
+    height:357px;
+    gap:15px;
+    flex-direction: column;
+    margin-bottom:40px;
+}
+
+.person__img {
+    width:37px;
+    height: 37px;
+}
+
+.person__text {
+    height:38px;
+    overflow: hidden; 
+}
+
+.testimonials .button {
+    width: 240px;
+    display:block;
+    margin:0 auto;
+}
 }
 

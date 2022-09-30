@@ -481,6 +481,10 @@
 
 /*DONATE FORM ENDS*/
 
+
+
+
+/*MEDIA 1000-1599*/
 @media screen and (max-width: 1599px) {
 
     /*INTRO*/
@@ -537,6 +541,99 @@
 }
 }
 
+@media screen and (max-width: 999px) {
+    .header-donate {
+        position:static;
+    }
+
+    /*INTRO*/
+.intro {
+    min-width:640px;
+    height:335px;
+    margin-top:34px;
+    background-position: 37% 50%;
+}
+
+/*DONATE*/
+.donate {
+    min-width:640px;
+}
+
+.donate__wrapper {
+    padding-top:30px;
+    padding-bottom:46px;
+}
+
+.donate__advertisement {
+    margin-bottom:20px;
+    font-size: 24px;
+    line-height: 120%;
+}
+
+.donate__subtext {
+    margin-bottom:30px;
+}
+
+.donate__info {
+    margin-bottom:30px;
+}
+
+.donate__container {
+    padding:30px 0 31px 0;
+}
+
+/*Donate form*/
+.donate__container-title {
+    margin-bottom:20px;
+    text-align: center;
+}
+
+.donate__container-text {
+    margin-bottom:50px;
+    text-align: center;
+}
+
+.visual__container {
+    margin-bottom:63px;
+}
+
+.number__container {
+    margin-top:105px;
+    margin-left:27px;
+}
+
+.radio__container::after {
+    width:524px;
+}
+
+.radio__item:nth-child(2), .radio__item:nth-child(3) {
+    display:none;
+}
+
+.radio__item:nth-child(6) .radio {
+    
+}
+
+.radio__value {
+    bottom:-40px;
+}
+
+.donate__input-block {
+    margin-top:98px;
+    margin-bottom:31px;
+}
+
+.donate__input {
+    width:180px;
+    height:42px;
+    padding:12px 58px 12px 6px;
+}
+
+.donate__input-icon {
+    right:11px;
+    top:11px;
+}
+}
 
 
 
