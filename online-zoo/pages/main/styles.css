@@ -655,7 +655,7 @@
 
 .about__wrapper {
     margin-top:109px;
-    margin-bottom:152px;
+    margin-bottom:142px;
 }
 
 .about__img img{
@@ -722,7 +722,7 @@
 .pets__side-image-left {
     width:386px;
     height:202px;
-    left:-187px;
+    left:-190px;
 }
 
 .pets__side-image-right {
@@ -748,6 +748,7 @@
 
 .instruction__container {
     margin-left:49px;
+    padding-right: 40px;
 }
 
 .instruction__subtitle {
@@ -788,10 +789,10 @@
 }
 
 .testimonials__side-img {
-    height:338px;
+    height:329px;
     position: absolute;
     right:0;
-    bottom:-100px;
+    bottom:-88px;
 }
 
 /*TESTIMONIALS ENDS*/
@@ -802,7 +803,7 @@
 
 .testimonials__card {
     min-width:293px;
-    padding:15px 15px 20px 16px;
+    padding:15px 15px 17px 16px;
     margin-right:30px;
 }
 
@@ -819,7 +820,7 @@
 .intro {
     min-width:640px;
     height:373px;
-    padding-top:82px;
+    padding-top:85px;
     background-position: center;
 }
 
@@ -829,7 +830,7 @@
 }
 
 .intro__title {
-    margin-bottom:-10px;
+    margin-bottom:-9px;
     margin-left:auto;
     font-size: 54px;
     line-height: 75%;
@@ -863,7 +864,7 @@
 }
 
 .about__wrapper {
-    margin-top:60px;
+    margin-top: 71px;
     margin-bottom:80px;
 }
 
@@ -999,6 +1000,7 @@
 
 .instruction__container {
     margin-left:20px;
+    padding-right: 0;
 }
 
 .instruction__subtitle {
@@ -1008,10 +1010,10 @@
 }
 
 .testimonials__side-img {
-    height: 195px;
+    height: 197px;
     position: absolute;
-    right:0;
-    bottom:-65px;
+    right: -6px;
+    bottom: -65px;
 }
 
 /*CARDS*/
@@ -1060,7 +1062,7 @@
 .testimonials__card {
     width:auto;
     min-height:109px;
-    padding:11px 29px 12px 12px;
+    padding: 13px 29px 12px 11px;
     margin-right: 0;
 }
 
@@ -1081,10 +1083,253 @@
     overflow: hidden; 
 }
 
+.person__details-adrs {
+    margin-right: 11px;
+}
+
 .testimonials .button {
     width: 240px;
     display:block;
     margin:0 auto;
+}
+}
+
+
+@media screen and (max-width: 639px) {
+    /*INTRO*/
+.intro {
+    min-width:320px;
+    height:187px;
+    margin-top:34px;
+    padding-top: 43px;
+    background-position: center;
+}
+
+.intro__title {
+    margin-bottom:-10px;
+    margin-left:auto;
+    font-size: 28px;
+    line-height: 75%;
+    font-weight: 700;
+    width:128px;
+    height:103px;
+
+    position:relative;
+    z-index: 1;
+}
+
+.intro__img {
+    width:119px;
+    height:119px;
+
+    position: absolute;
+    right: 28px;
+    top: -20px;
+    left:auto;
+}
+
+.intro .button {
+    display:none;
+}
+
+/*ABOUT*/
+.about {
+    min-width:320px;
+}
+
+.about__wrapper {
+    margin-top:20px;
+    margin-bottom:40px;
+    flex-direction: column;
+}
+
+.about .button {
+    display:block;
+    margin-bottom: 41px;
+}
+
+.about__description {
+    margin-left:0;
+    width:100%;
+}
+
+.about__title {
+    margin-bottom:10px;
+    font-size: 24px;
+    line-height: 120%;
+}
+
+.about__subtitle {
+    margin-top: 18px;
+    margin-bottom:10px;
+}
+
+.about__side-image {
+    position: absolute;
+    top: 40px;
+    right:-40px;
+}
+
+.about__side-image img {
+    height: 217px;
+}
+
+/*PETS*/
+.pets {
+    min-width:320px;
+    overflow: hidden;
+}
+
+.pets__wrapper {
+    padding-bottom:60px;
+}
+
+.slider__container {
+    margin-bottom:20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider__button {
+    display:none;
+}
+
+.slider__row {
+    flex-direction: column;
+    gap:20px;
+    max-height:590px;
+}
+
+.slider__row:first-of-type {
+    margin-bottom:20px;
+}
+
+.slider__item {
+    max-width:285px;
+    min-height: 285px;
+}
+
+.darkest-block {
+    border-radius: 5px 5px 0 0;
+}
+
+.pets__side-image-left {
+    width:138px;
+    height: 72px;
+    position: absolute;
+    left:-80px;
+    bottom:0;
+}
+
+.pets__side-image-right {
+    width: 85px;
+    height: 75px;
+    position: absolute;
+    right:-20px;
+    bottom:-5px;
+}
+
+/*INSTRUCTION*/
+.instruction {
+    min-width:320px;
+    padding:20px 0 20px 0;
+}
+
+.instruction .container {
+    max-width:300px;
+}
+
+.instruction__wrapper {
+    padding-top:20px;
+    padding-bottom:40px;
+}
+
+.instruction__title {
+    margin-bottom:10px;
+    font-size: 24px;
+}
+
+.instruction__container {
+    margin:0;
+}
+
+.instruction__subtitle {
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+}
+
+.instruction_p {
+    display:none;
+}
+
+/*CARDS*/
+.cards__title {
+    font-size: 24px;
+    line-height: 120%;
+    margin-top:0;
+    margin-bottom:20px;
+}
+
+.cards__wrapper {
+    width:168px;
+    margin:0 auto;
+    margin-bottom:30px;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.card__title {
+    margin-top:10px;
+    margin-bottom:9px;
+    display:block;
+    height:44px;
+}
+
+.card:not(:last-child)::after {
+    width:90px;
+    right:-55px;
+    top: 194px;
+    transform: rotate(85deg);
+}
+
+/*TESTIMONIALS*/
+.testimonials {
+    min-width:320px;
+}
+
+.testimonials__wrapper {
+    margin-top: 22px;
+    padding-bottom:60px;
+}
+
+.testimonials__title {
+    margin-bottom: 11px;
+    font-size: 24px;
+}
+
+.testimonials__side-img {
+    height:100px;
+    bottom:-37px;
+    right:-5px;
+    transform: rotate(-10deg);
+}
+
+/*TESTIMONIALS-CARD*/
+.testimonials__container {
+    margin-bottom:30px;
+}
+
+.testimonials__card {
+    width: auto;
+    min-height: 109px;
+    padding: 7px 29px 12px 10px;
+    margin-right: 0;
+}
+
+.person__img {
+    margin-right: 7px;
 }
 }
 

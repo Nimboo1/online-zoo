@@ -426,6 +426,8 @@ h1,h2,h3,h4,h5,h6,p {
     width:230px;
     margin-left:auto;
     display:block;
+    -webkit-box-sizing: initial;
+    box-sizing: initial;
 }
 
 .footer__autor:active p{
@@ -439,6 +441,8 @@ h1,h2,h3,h4,h5,h6,p {
     line-height: 20.8px;
     color: #FFFFFF;
     opacity:0.9;
+    -webkit-box-sizing: initial;
+    box-sizing: initial;
 }
 
 .autor__text:first-child {
@@ -508,7 +512,11 @@ h1,h2,h3,h4,h5,h6,p {
 /*Footer section 3*/
 
 .footer__section:last-child {
-    margin-left:-78px;
+    margin-left: -89px;
+}
+
+.footer__section-subtitle {
+    margin-bottom:11px;
 }
 }
 
@@ -523,12 +531,11 @@ h1,h2,h3,h4,h5,h6,p {
 
     /*HEADER*/
 .header {
-    max-width:640px;
-    position:fixed;
+    min-width:640px;
+    position:sticky;
     z-index: 5000;
     top:0;
-    left:50%;
-    transform: translateX(-50%);
+    left:0;
 }
 
 .header__wrapper {
@@ -618,5 +625,96 @@ h1,h2,h3,h4,h5,h6,p {
 
 .footer__form {
     display:none;
+}
+}
+
+
+@media screen and (max-width: 639px) {
+     /*GENERAL*/
+     .container {
+        max-width:300px;
+    }
+
+    /*HEADER*/
+.header {
+    min-width:320px;
+}
+
+/*FOOTER STARTS*/
+.footer {
+    min-width:320px;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.footer__wrapper {
+    flex-direction: column;
+    justify-content: center;
+    position:relative;
+}
+
+/*Footer section 1*/
+.footer__section:first-child {
+    align-items: center;
+}
+
+.footer .header__logo-title {
+    margin:0;
+    padding:0;
+    width:auto;
+    height:auto;
+    border:none;
+}
+
+.footer .header__logo-img {
+    top:-4px;
+    left:72px;
+}
+
+.margin {
+    margin-bottom:30px;
+}
+
+.footer .button {
+    order:3;
+}
+
+.links__container {
+    margin-bottom:30px;
+    position:static;
+    gap:30px;
+    flex-direction: row;
+}
+
+.link__img-block {
+    margin-right:0;
+}
+
+.link__text {
+    display:none;
+}
+
+/*Footer section 2*/
+.footer__section:nth-child(2) {
+    order:3;
+    margin:0;
+    width:auto;
+    align-self:center;
+}
+
+.footer__nav {
+    gap:30px;
+}
+
+/*Footer section 3*/
+.footer__section:last-child {
+    display:block;
+    margin-left:auto;
+    margin-top:30px;
+    margin-bottom: 27px;
+}
+
+.footer__autor {
+    font-size:15px;
 }
 }
