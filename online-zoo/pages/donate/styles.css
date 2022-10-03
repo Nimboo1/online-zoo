@@ -779,7 +779,7 @@
 .radio {
     width:5px;
     height: 5px;
-    -webkit-transform: translate(-0.6px, -3.3px);
+    -webkit-transform: translate(0, 0);
         -ms-transform: translate(-0.6px, -3.3px);
             transform: translate(-0.6px, -3.3px);
 }
