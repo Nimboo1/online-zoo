@@ -177,6 +177,7 @@
 }
 
 .radio__container {
+    margin: 0 auto;
     background: #404950;
     border-radius: 2px;
     height:27px;
@@ -205,6 +206,16 @@
     -webkit-transform: translate(-50%,-50%);
         -ms-transform: translate(-50%,-50%);
             transform: translate(-50%,-50%);
+}
+
+.radio__container::before {
+    content:"Amount";
+    display:block;
+    font-size: 16px;
+    font-weight: 400;
+    position:absolute;
+    top: -41px;
+    left:0;
 }
 
 .radio__item {
@@ -504,7 +515,7 @@
 
 .donate__wrapper {
     padding-top:40px;
-    padding-bottom:40px;
+    padding-bottom: 28px;
 }
 
 .donate__advertisement {
@@ -529,7 +540,9 @@
 }
 
 .radio__container {
-    gap:90px;
+    gap: 80px;
+    width: 810px;
+    padding: 8px 0px;
 }
 
 .radio__item:first-child {
@@ -537,7 +550,12 @@
 }
 
 .radio__container::after {
-    width:785px;
+    width: 775px;
+}
+
+.radio__value {
+    bottom: -41px;
+    left: 11px;
 }
 }
 
@@ -571,11 +589,11 @@
 }
 
 .donate__subtext {
-    margin-bottom:30px;
+    margin-bottom: 26px;
 }
 
 .donate__info {
-    margin-bottom:30px;
+    margin-bottom: 26px;
 }
 
 .donate__container {
@@ -594,7 +612,7 @@
 }
 
 .visual__container {
-    margin-bottom:63px;
+    margin-bottom: 69px;
 }
 
 .number__container {
@@ -602,8 +620,18 @@
     margin-left:27px;
 }
 
+.radio__container {
+    width:100%;
+    padding: 8px 20px;
+}
+
 .radio__container::after {
     width:524px;
+}
+
+.radio__container::before {
+    top: -28px;
+    left:10px;
 }
 
 .radio__item:nth-child(2), .radio__item:nth-child(3) {
@@ -637,7 +665,7 @@
 .intro {
     min-width:320px;
     height:187px;
-    background-position: 35% 50%;
+    background-position: 33% 50%;
 }
 
 /*DONATE*/
@@ -666,23 +694,28 @@
 }
 
 .donate__container-text {
-    margin-bottom:0px;
+    margin-bottom: 12px;
     font-size: 16px;
+    line-height: 21.8px;
+}
+
+.donate__info {
+    margin-bottom: 29px;
 }
 
 .visual__container {
-    margin-bottom:35px;
+    margin-bottom: 33px;
 }
 
 .number__container {
-    margin-top:50px;
+    margin-top: 58px;
     margin-left:0;
 }
 
 .number {
     font-size: 40px;
     line-height: 80%;
-    margin-bottom:6px;
+    margin-bottom: 9px;
 }
 
 .number__text {
@@ -700,18 +733,24 @@
 
 .animal {
     margin-left:50px;
-    width:151px;
+    width: 160px;
 }
 
 .radio__container {
-    padding: 4px 17.5px 4px 15px;
+    padding: 4px 10px 4px 10px;
     height: 13.5px;
     gap:40px;
 }
 
 .radio__container::after {
-    width:250px;
+    width: 260px;
 }
+
+.radio__container::before {
+    top: -30.5px;
+    left:0px;
+}
+
 
 .radio__value {
     bottom:-25px;
@@ -740,7 +779,9 @@
 .radio {
     width:5px;
     height: 5px;
-    transform: translate(-0.6px, -3.3px);
+    -webkit-transform: translate(-0.6px, -3.3px);
+        -ms-transform: translate(-0.6px, -3.3px);
+            transform: translate(-0.6px, -3.3px);
 }
 
 .radio::after {

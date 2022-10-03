@@ -496,7 +496,8 @@ h1,h2,h3,h4,h5,h6,p {
 
 .footer__section:nth-child(2) {
     width:auto;
-    align-self:flex-end;
+    -ms-flex-item-align:end;
+        align-self:flex-end;
     margin-left:0;
     margin-right:0;
 }
@@ -532,7 +533,7 @@ h1,h2,h3,h4,h5,h6,p {
     /*HEADER*/
 .header {
     min-width:640px;
-    position:sticky;
+    position:fixed;
     z-index: 5000;
     top:0;
     left:0;
@@ -578,8 +579,13 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .footer__wrapper {
-    flex-direction: column;
-    justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     position:relative;
 }
 
@@ -648,14 +654,21 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .footer__wrapper {
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position:relative;
 }
 
 /*Footer section 1*/
 .footer__section:first-child {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .footer .header__logo-title {
@@ -676,14 +689,19 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .footer .button {
-    order:3;
+    -webkit-box-ordinal-group:4;
+        -ms-flex-order:3;
+            order:3;
 }
 
 .links__container {
     margin-bottom:30px;
     position:static;
     gap:30px;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 
 .link__img-block {
@@ -696,10 +714,14 @@ h1,h2,h3,h4,h5,h6,p {
 
 /*Footer section 2*/
 .footer__section:nth-child(2) {
-    order:3;
+    -webkit-box-ordinal-group:4;
+        -ms-flex-order:3;
+            order:3;
     margin:0;
     width:auto;
-    align-self:center;
+    -ms-flex-item-align:center;
+        -ms-grid-row-align:center;
+        align-self:center;
 }
 
 .footer__nav {
