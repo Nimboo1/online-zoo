@@ -493,6 +493,8 @@
 }
 
 .testimonials__progress {
+    -webkit-appearance: none;
+    display:block;
     margin-bottom:31px;
     margin-left:auto;
     margin-right:auto;
@@ -517,19 +519,32 @@
     #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
     background-origin: border-box;
     background-clip: padding-box, border-box;
-
 }
 
-.testimonials__progress-slide {
-    width:115px;
+.testimonials__progress:focus {
+    outline: none;
+}
+
+.testimonials__progress::-webkit-slider-thumb:hover {
+    background: #E47209;
+}
+
+.testimonials__progress::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    width:75px;
     height:6px;
     background: rgba(254, 144, 19, 1);
     border-radius:5px;
     cursor:pointer;
 }
 
-.testimonials__progress-slide:hover {
-    background: #E47209;
+.testimonials__progress::-moz-range-thumb {
+    -webkit-appearance: none; 
+    width:75px;
+    height:6px;
+    background: rgba(254, 144, 19, 1);
+    border-radius:5px;
+    cursor:pointer;
 }
 
 .testimonials__side-img {
@@ -545,7 +560,7 @@
 /*TESTIMONIALS-CARD STARTS*/
 
 .testimonials__card {
-    width:268px;
+    min-width:268px;
     padding:15px 15px 19px 16px;
 
     background-color: #F1F3F2;
@@ -609,13 +624,19 @@
 }
 
 .testimonials__container {
+    margin-bottom:21px;
+    overflow: hidden;
+}
+
+.testimonials__container-slide {
     display:-webkit-box;
     display:-ms-flexbox;
     display:flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-bottom:21px;
+    gap:29px;
+    transition: all 0.3s ease;
 }
 
 .person__item {
@@ -818,14 +839,22 @@
     .testimonials__title {
         margin-bottom:30px;
     }
+
+    .testimonials__container-slide {
+        gap:30px;
+    }
     
     .testimonials__progress {
         margin-bottom:52px;
         width:390px;
     }
     
-    .testimonials__progress-slide {
-        width:75px;
+    .testimonials__progress::-webkit-slider-thumb {
+        width:48.75px;
+    }
+
+    .testimonials__progress::-moz-range-thumb {
+        width: 48.75px;
     }
     
     .testimonials__side-img {
@@ -844,12 +873,10 @@
     .testimonials__card {
         min-width:293px;
         padding:15px 15px 17px 16px;
-        margin-right:30px;
     }
     
     .testimonials__container {
         margin-bottom:20px;
-        overflow: hidden;
     }
     }
     
@@ -1103,7 +1130,7 @@
     .testimonials__card {
         width:auto;
         min-height:109px;
-        padding: 13px 29px 12px 11px;
+        padding: 10px 29px 8px 11px;
         margin-right: 0;
         cursor:pointer;
     }
@@ -1113,13 +1140,16 @@
     }
     
     .testimonials__container {
+        margin-bottom:40px;
         height:357px;
+    }
+
+    .testimonials__container-slide {
         gap:15px;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-        margin-bottom:40px;
     }
     
     .person__img {
@@ -1393,7 +1423,7 @@
     .testimonials__card {
         width: auto;
         min-height: 109px;
-        padding: 7px 29px 12px 10px;
+        padding: 7px 29px 11px 10px;
         margin-right: 0;
     }
 

@@ -47,3 +47,19 @@ function closePopup() {
     document.querySelector(".testimonials__card-bg").classList.add("display-none");
 }
 
+
+
+//Скрипт слайдера отзывов
+const desktopWidth = 1600;
+const smallDWidth = 1000;
+const testimonialsContainer = document.querySelector(".testimonials__container-slide");
+const progressBar = document.querySelector(".testimonials__progress");
+
+progressBar.addEventListener("input", testimonialsShift);
+
+function testimonialsShift() {
+  if (document.documentElement.clientWidth < smallDWidth) return;
+  let shift = (document.documentElement.clientWidth < desktopWidth) ? 293+30 : 268+29;
+  shift *= this.value;
+  testimonialsContainer.style.transform = "translate("+ -shift +"px)";
+}
