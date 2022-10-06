@@ -13,7 +13,7 @@
     <title>Donate</title>
 </head>
 <body>
-    <header class="header header-donate">
+    <header class="header">
         <div class="container">
             <div class="header__wrapper">
                 <a href="../main/index.html" class="header__logo">
@@ -30,6 +30,20 @@
                 </nav>
                 <div class="menu">
                     <img src="../../assets/icons/burger_menu.svg" alt="burger" class="menu__img">
+                    <div class="menu__nav display-none opacity-none">
+                        <a href="../main/index.html" class="header__logo">
+                            <h2 class="header__logo-title">PetStory online</h2>
+                            <img class="header__logo-img" src="../../assets/icons/bambooOrange.svg" alt="bamboo">
+                        </a>
+                        <a href="../main/index.html" class="menu__link">About</a>
+                        <a href="#" class="menu__link">Map</a>
+                        <a href="#" class="menu__link">Zoos</a>
+                        <a href="#" class="menu__link active">Donate</a>
+                        <a href="#" class="menu__link">Contact us</a>
+                        <a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online?node-id=0%3A1" class="menu__link">Designed by ©</a>
+                        <button class="close"></button>
+                    </div>
+                    <div class="darkest-block display-none opacity-none"></div>
                 </div>
             </div>
         </div>
@@ -80,13 +94,13 @@
                             </div>
                             <div class="radio__item">
                                 <label class="radio__label">
-                                    <input class="radio" type="radio" name="rbuttons" value="250" checked>
+                                    <input class="radio" type="radio" name="rbuttons" value="250">
                                     <p class="radio__value">250</p>
                                 </label>
                             </div>
                             <div class="radio__item">
                                 <label class="radio__label">
-                                    <input class="radio" type="radio" name="rbuttons" value="100">
+                                    <input class="radio" type="radio" name="rbuttons" value="100" checked>
                                     <p class="radio__value">100</p>
                                 </label>
                             </div>
@@ -104,7 +118,7 @@
                             </div>
                         </div>
                         <div class="donate__input-block">
-                            <input type="number" class="donate__input" placeholder="Another amount" min="1" max="9999">
+                            <input type="number" class="donate__input" placeholder="Another amount" min="1" max="9999" value="100" required>
                             <div class="donate__input-icon"></div>
                         </div>                       
                         <div class="radio__container-count">
@@ -193,4 +207,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

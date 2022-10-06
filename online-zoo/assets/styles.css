@@ -99,7 +99,7 @@ h1,h2,h3,h4,h5,h6,p {
     border-radius:2px;
     margin-right:63px;
     text-align:center;
-    color:white;;
+    color:white;
     font-weight: 400;
     font-size: 19px;
     line-height: 22.8px;
@@ -175,11 +175,108 @@ h1,h2,h3,h4,h5,h6,p {
 .menu {
     display:none;
     margin-left:auto;
-    
+}
+
+.menu .darkest-block {
+    width:100vw;
+    height:100vh;
+    opacity:0.3;
+    top:34px;
+    left:0;
+    display:block;
 }
 
 .menu__img {
     margin-bottom:2px;
+    cursor:pointer;
+}
+
+.menu__nav {
+    width:100vw;
+    padding-left:12px;
+    padding-top:10px;
+    padding-bottom:40px;
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:15px;
+    position:absolute;
+    top:34px;
+    left:0;
+    z-index: 1000;
+    opacity:1;
+    transition: opacity 0.5s ease;
+}
+
+.display-none {
+    display:none !important;
+}
+
+.opacity-none {
+    opacity:0 !important;
+}
+
+@keyframes fadeInFromNone {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOutFromBlock {
+    0% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+
+
+.menu__link {
+    font-weight: 500;
+    line-height: 22.4px;
+    text-decoration: none;
+    color:black;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.menu__link:hover {
+    background: -o-linear-gradient(336.04deg, #F9804B 1.49%, #FE9013 101.44%);
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight:600;
+}
+
+.menu__nav .header__logo .header__logo-title {
+    border: 0.8px solid #FE9013;
+
+    margin-right:0;
+    color:#FE9013;
+}
+
+.menu .header__logo {
+    margin-bottom:30.5px;
+}
+
+.close {
+    width:14px;
+    height:14px;
+    border:none;
+    background: url("../assets/icons/close.svg");
+    position:absolute;
+    right:12px;
+    top:12px;
+    cursor:pointer;
 }
 
 /*MENU ENDS*/
