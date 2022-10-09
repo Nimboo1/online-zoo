@@ -192,7 +192,7 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .menu__nav {
-    width:100vw;
+    width:100%;
     padding-left:12px;
     padding-top:10px;
     padding-bottom:40px;
@@ -216,26 +216,6 @@ h1,h2,h3,h4,h5,h6,p {
 .opacity-none {
     opacity:0 !important;
 }
-
-@keyframes fadeInFromNone {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  @keyframes fadeOutFromBlock {
-    0% {
-      opacity: 1;
-    }
-  
-    100% {
-      opacity: 0;
-    }
-  }
-
 
 .menu__link {
     font-weight: 500;
@@ -277,6 +257,11 @@ h1,h2,h3,h4,h5,h6,p {
     right:12px;
     top:12px;
     cursor:pointer;
+    transition: transform 0.3s ease
+}
+
+.close:hover {
+    transform: scale(1.3);
 }
 
 /*MENU ENDS*/
