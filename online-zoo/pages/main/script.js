@@ -48,7 +48,8 @@ function showPopup() {
 darkbg.addEventListener("click", closePopup);
 document.querySelector(".close-popup").addEventListener("click", closePopup);
 
-function closePopup() {
+function closePopup(e) {
+    if (this != e.target) return;
     darkbg.classList.add("display-none");
     bg.style.marginTop = "0";
     card.remove();
@@ -74,7 +75,7 @@ function testimonialsShift() {
 
 
 
-//Скрипт слайдера отзывов
+//Скрипт слайдера картинок
 const btnLeft = document.querySelector(".slider__button-left");
 const btnRight = document.querySelector(".slider__button-right");
 
@@ -148,6 +149,9 @@ const arrForShuffle = [0,1,2,3,4,5,6,7];
 let sliderItems = document.querySelectorAll(".slider__item");
 let containerWrapper = document.querySelector(".row__container-wrapper");
 
+let oldArr = arrForShuffle.toString().slice(0,5);
+let newArr;
+
 function createSlide(direction) {
   let rowContainer = document.createElement("div");
   rowContainer.classList.add("row__container");
@@ -156,13 +160,21 @@ function createSlide(direction) {
   let sliderRow2 = document.createElement("div");
   sliderRow2.classList.add("slider__row");
 
-  let shuffledArr = shuffleArr(arrForShuffle);
-  for (let i = 0; i < 3; i++) {
-    sliderRow1.append(sliderItems[shuffledArr[i]].cloneNode(true));
-  } 
-  for (let i = 3; i < 6; i++) {
-    sliderRow2.append(sliderItems[shuffledArr[i]].cloneNode(true));
-  } 
+  while (true) {
+    let shuffledArr = shuffleArr(arrForShuffle);
+    for (let i = 0; i < 3; i++) {
+      sliderRow1.append(sliderItems[shuffledArr[i]].cloneNode(true));
+    } 
+    for (let i = 3; i < 6; i++) {
+      sliderRow2.append(sliderItems[shuffledArr[i]].cloneNode(true));
+    } 
+
+    newArr = shuffledArr.toString().slice(0,5);
+    if (newArr != oldArr) {
+      oldArr = newArr;
+      break;
+    }
+  }
 
   rowContainer.append(sliderRow1);
   rowContainer.append(sliderRow2);
